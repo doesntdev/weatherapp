@@ -1,6 +1,6 @@
-Download into directory
+download into directory
 
-open node cli, browser to directory
+open node cli, browse to directory
 
 npm install
 
