@@ -1,7 +1,6 @@
 const geocode = require('./geocode/geocode');
 const yargs = require('yargs');
 const weather = require('./weather/weather');
-
 const argv = yargs
   .options({
     a: {
@@ -14,8 +13,6 @@ const argv = yargs
   .help()
   .alias('help', 'h')
   .argv;
-
-
 
 geocode.geocodeAddress(argv.a, (errorMessage, results) => {
   if (errorMessage) {
@@ -33,8 +30,3 @@ geocode.geocodeAddress(argv.a, (errorMessage, results) => {
 });
 
 console.log('"Powered by Dark Sky” https://darksky.net/poweredby/')
-
-
-
-// 5302888276e1fc1ecba9d482abeeec20
-//
